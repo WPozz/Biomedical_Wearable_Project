@@ -1,1 +1,320 @@
-index ! 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kairos — Stress Monitoring & Well-being at Work </title>
+  <meta name="description" content="Kairos is a biomedical wearable project for real-time stress tracking, smart breaks and muscle-mass loss prevention. SDG 3 – Target 3.5." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⏱️</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="top">
+    <nav class="nav container">
+      <a class="brand" href="#home">
+        <span class="brand-mark">⏱️</span>
+        <span class="brand-text">KAIROS<small>the right moment · for you</small></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#problem">Problem</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#app">The App</a></li>
+        <li><a href="#privacy">Privacy</a></li>
+        <li><a href="#roadmap">Roadmap</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact" class="btn btn--small">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="container hero__grid">
+        <div class="hero__copy reveal">
+          <a class="sdg-badge" href="https://sdgs.un.org/goals/goal3" target="_blank" rel="noopener">
+            <span class="sdg-badge__num">3</span>
+            <span>SDG 3 · Target 3.5 — Good Health &amp; Well-being</span>
+          </a>
+          <h1>Stress, monitored.<br><span class="accent">Well-being, delivered.</span></h1>
+          <p class="lead">
+            <strong>Kairos</strong> is a biomedical wearable project that turns heart-rate
+            variability, sleep and movement data into a clear, real-time stress index —
+            while helping prevent sedentary-related muscle mass loss with guided micro-breaks.
+          </p>
+          <div class="hero__cta">
+            <a href="#features" class="btn btn--primary">Explore the project</a>
+            <a href="#app" class="btn btn--ghost">See the app</a>
+          </div>
+          <ul class="hero__chips">
+            <li>⌚ Fitbit data sync</li>
+            <li>📱 Mobile-first app</li>
+            <li>🔒 GDPR &amp; anonymity</li>
+          </ul>
+        </div>
+
+        <!-- Pure-CSS phone mockup -->
+        <div class="hero__phone reveal delay-1" aria-hidden="true">
+          <div class="phone">
+            <div class="phone__screen">
+              <div class="phone__brand">KAIROS</div>
+              <div class="stress-ring"><span>41</span></div>
+              <div class="phone__label">Moderate stress level</div>
+              <button class="phone__cta" type="button">🙋 Active break</button>
+              <div class="phone__vitals">
+                <div><small>Steps</small><b>1.424</b>🚶</div>
+                <div><small>Distance</small><b>3.3 km</b>📍</div>
+              </div>
+              <div class="phone__sleep"><small>Sleep duration</small><b>7h 6m</b>🌙</div>
+              <div class="phone__nav">
+                <span class="on">⌂<i>Home</i></span><span>📊<i>Data</i></span><span>▶<i>Exercises</i></span><span>👤<i>Profile</i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROBLEM ============ -->
+    <section class="section section--soft" id="problem">
+      <div class="container">
+        <p class="eyebrow reveal">The hidden cost of sedentary, high-stress work</p>
+        <h2 class="reveal">The problem is real.</h2>
+        <div class="stats">
+          <article class="stat reveal">
+            <span class="stat__num" data-count="51">0</span><span class="stat__unit">%</span>
+            <p>of Italian workers reported <strong>daily stress at work</strong> in 2026.</p>
+          </article>
+          <article class="stat reveal delay-1">
+            <span class="stat__num" data-count="67">0</span><span class="stat__unit">%</span>
+            <p>of European workers today are employed in <strong>sedentary jobs</strong> (up from 55% in 1994).</p>
+          </article>
+          <article class="stat reveal delay-2">
+            <span class="stat__range">50–60</span><span class="stat__unit">%</span>
+            <p>of all workdays lost each year are attributable to <strong>work-related stress</strong>.</p>
+          </article>
+        </div>
+
+        <h3 class="sub reveal">Employees are ready to wear it — we asked them.</h3>
+        <div class="survey reveal">
+          <div class="survey__meta">
+            <div><b>212</b><span>responses</span></div>
+            <div><b>12</b><span>Italian regions</span></div>
+            <div><b>100%</b><span>employed workers</span></div>
+          </div>
+          <ul class="survey__bars">
+            <li><span class="bar" style="--w:79%"></span><b>79%</b> would wear a wellness smartwatch</li>
+            <li><span class="bar" style="--w:39%"></span><b>39%</b> feel "extremely stressed or exhausted" at the end of the workday</li>
+            <li><span class="bar" style="--w:76%"></span><b>76%</b> believe working posture causes tension &amp; physical pain</li>
+            <li><span class="bar" style="--w:46%"></span><b>46%</b> take a 2-minute break only every 2–3 hours</li>
+            <li><span class="bar" style="--w:78%"></span><b>78%</b> would share wellness data with their company — <em>39% insist it stay anonymous &amp; aggregated</em></li>
+          </ul>
+          <p class="survey__quote">“Privacy isn't optional.”</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURES ============ -->
+    <section class="section" id="features">
+      <div class="container">
+        <p class="eyebrow reveal">What Kairos does</p>
+        <h2 class="reveal">One wearable. A clear, calm picture of your day.</h2>
+
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card__icon">❤️‍🔥</div>
+            <h3>Real-time stress tracking</h3>
+            <p>Live stress index (🟢 Low / 🟡 Medium / 🔴 High) computed from <strong>HRV, sleep quality and movement</strong> synced from Fitbit.</p>
+          </article>
+          <article class="card reveal delay-1">
+            <div class="card__icon">⏰</div>
+            <h3>Smart break reminders</h3>
+            <p>Context-aware nudges when your stress index rises or you've been <strong>inactive too long</strong>.</p>
+          </article>
+          <article class="card reveal delay-2">
+            <div class="card__icon">🧘</div>
+            <h3>Active break button</h3>
+            <p>One tap: choose a <strong>full-body routine</strong> or a <em>Targeted relief</em> micro-video for your desk or workstation.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon">💪</div>
+            <h3>Muscle-mass prevention</h3>
+            <p>Integrates <strong>impedance body scales</strong> and strength-training tracking to counter sedentary muscle loss.</p>
+          </article>
+          <article class="card reveal delay-1">
+            <div class="card__icon">📈</div>
+            <h3>Weekly reports</h3>
+            <p>Weekly, monthly and yearly dashboards highlighting your <strong>most stressful days and trends</strong>.</p>
+          </article>
+          <article class="card reveal delay-2">
+            <div class="card__icon">🏢</div>
+            <h3>Wellness dashboard (HR)</h3>
+            <p>Employers see only <strong>aggregated, anonymous</strong> department averages — Logistics vs. Administration, and industry benchmarks.</p>
+          </article>
+        </div>
+
+        <div class="compare reveal">
+          <h3>Kairos vs. typical fitness apps (Fitbit, Garmin)</h3>
+          <div class="compare__grid">
+            <div class="compare__col compare__col--others">
+              <h4>Typical apps</h4>
+              <p>📊 Data overload — high cognitive load</p>
+              <p>🧠 Focus on mindfulness &amp; breathing</p>
+              <p>📡 Advanced sensing (e.g. EDA)</p>
+            </div>
+            <div class="compare__col compare__col--kairos">
+              <h4>Kairos</h4>
+              <p>✅ Minimal, action-first UI</p>
+              <p>✅ Focus on physical &amp; postural relief</p>
+              <p>✅ Simple, reliable sensing approach</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ APP / DATA ============ -->
+    <section class="section section--soft" id="app">
+      <div class="container">
+        <p class="eyebrow reveal">App architecture &amp; navigation</p>
+        <h2 class="reveal">Four tabs. Zero clutter.</h2>
+        <div class="tabs reveal">
+          <article><span>⌂</span><div><b>HOME</b><p>Immediate action and a quick analysis.</p></div></article>
+          <article><span>📊</span><div><b>DATA</b><p>Deeper insight into your metrics and trends.</p></div></article>
+          <article><span>▶</span><div><b>EXERCISES</b><p>The video library for posture and recovery.</p></div></article>
+          <article><span>👤</span><div><b>PROFILE</b><p>Settings and personal information.</p></div></article>
+        </div>
+
+        <div class="pipeline">
+          <article class="pipe reveal">
+            <h3>📥 Input</h3>
+            <ul>
+              <li><b>Wearable (Fitbit API):</b> heart rate &amp; HRV, sleep hours, daily steps.</li>
+              <li><b>Manual profile:</b> age, gender, height &amp; weight, profession, department.</li>
+              <li><b>Optional:</b> commuting method, weekly activity, medical notes.</li>
+            </ul>
+          </article>
+          <article class="pipe reveal delay-1">
+            <h3>⚙️ Processing</h3>
+            <ul>
+              <li>Stress index from HRV + sleep quality.</li>
+              <li>Sedentary-time detection &amp; break logic.</li>
+              <li>Anonymisation &amp; aggregation before any company view.</li>
+            </ul>
+          </article>
+          <article class="pipe reveal delay-2">
+            <h3>📤 Output</h3>
+            <ul>
+              <li><b>Employee:</b> stress level, break alerts, personal reports.</li>
+              <li><b>HR:</b> anonymous department dashboard &amp; comparisons.</li>
+            </ul>
+          </article>
+        </div>
+
+        <figure class="persona reveal">
+          <figcaption>
+            <p class="eyebrow">Persona</p>
+            <h3>Paola Rossi, 52 — Software developer, Bologna 🇮🇹</h3>
+            <p><b>Goal:</b> feel more in control of her own health.</p>
+            <p><b>Need:</b> a clear, simple daily snapshot of her health status — without overwhelming data.</p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ PRIVACY ============ -->
+    <section class="section privacy" id="privacy">
+      <div class="container">
+        <p class="eyebrow reveal">GDPR by design</p>
+        <h2 class="reveal">Your individual data is never visible to HR.</h2>
+        <ul class="privacy__list reveal">
+          <li>🔐 Health and stress data are <strong>anonymised and aggregated</strong> before any employer view.</li>
+          <li>🏢 HR sees only <strong>group statistics</strong> (e.g. “IT Department”), never the individual.</li>
+          <li>🤝 Employees choose whether to <strong>share data with HR</strong> — and can withdraw consent anytime from Settings → Privacy.</li>
+          <li>⏳ Pseudonymised data is kept only as long as needed to compute monthly aggregates.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ ROADMAP ============ -->
+    <section class="section" id="roadmap">
+      <div class="container">
+        <p class="eyebrow reveal">Future developments</p>
+        <h2 class="reveal">Where Kairos is going next.</h2>
+        <ol class="timeline reveal">
+          <li><b>Algorithm precision</b> — improved stress-calculation accuracy.</li>
+          <li><b>HR report</b> — department-level averages, week-by-week trends, cross-department comparisons.</li>
+          <li><b>Push notifications</b> — timely, configurable nudges.</li>
+          <li><b>Dedicated video database</b> — no more reliance on YouTube links.</li>
+          <li><b>Delegated authentication</b> — “Sign in with Google” / corporate SSO.</li>
+          <li><b>Stress map &amp; company ranking</b> — locate high-risk zones and reward well-being-first workplaces.</li>
+          <li><b>Less obtrusive wearables</b> — smart rings &amp; bracelets instead of watches.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ TEAM ============ -->
+    <section class="section section--soft" id="team">
+      <div class="container">
+        <p class="eyebrow reveal">Project roadmap · Team</p>
+        <h2 class="reveal">Built by</h2>
+        <div class="team reveal">
+          <div class="member"><span class="avatar">LB</span><b>Linda Balducci</b><span>Team member</span></div>
+          <div class="member"><span class="avatar">WP</span><b>William Pozzolini</b><span>Team member</span></div>
+          <div class="member"><span class="avatar">RS</span><b>Sofia Ruggeri</b><span>Team member</span></div>
+        </div>
+        <p class="team__note reveal">
+          Project management: three workshops per month · one online meeting per week · weekly code upgrades via GitHub.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <div class="container container--narrow">
+        <p class="eyebrow reveal">Get in touch</p>
+        <h2 class="reveal">Want Kairos in your company?</h2>
+        <form id="contactForm" class="form reveal" novalidate>
+          <label>
+            Name
+            <input type="text" name="name" required minlength="2" placeholder="Paola Rossi" />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required placeholder="paola@example.com" />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="4" required minlength="10" placeholder="Tell us about your team…"></textarea>
+          </label>
+          <button type="submit" class="btn btn--primary btn--block">Send message</button>
+          <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <b>KAIROS</b><br />the right moment · for you
+      </div>
+      <div>
+        <a href="https://sdgs.un.org/goals/goal3" target="_blank" rel="noopener">SDG 3 — Target 3.5 ↗</a>
+      </div>
+      <div>© <span id="year"></span> Kairos Project · All data shown are aggregated &amp; anonymous.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
